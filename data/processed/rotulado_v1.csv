@@ -29,7 +29,6 @@ Compra no débito - Venzol E Frias Restaursao Bernardo Bra,Alimentação,conta,I
 Compra no débito - Hs Metropole Sbc Sao Bernardo Bra,Transporte,conta,Inter
 Compra no débito - Casa De Carnes E Rotissao Bernardo Bra,Mercado,conta,Inter
 Compra no débito - A B & B Comercio De Prsao Bernardo Bra,Outros,conta,Inter
-Compra no débito - Prisciladocouto Sao Bernardo Bra,Outros,conta,Inter
 Compra no débito - Chiquinho Sorvetes Outsao Bernardo Bra,Alimentação,conta,Inter
 Compra no débito - Livraria Da Vila Ltda Sao Paulo Bra,Compras,conta,Inter
 Pagamento efetuado - FEI (TAXAS),Educação,conta,Inter
@@ -97,7 +96,7 @@ TADA FLORICULTURA,Compras,cartao,Bradesco
 DROGASIL1138 01/03,Saúde,cartao,Bradesco
 SHIHADEH ROUPAS E CALC,Compras,cartao,Bradesco
 0 BLUEFIT MARECHAL,Saúde,cartao,Bradesco
-PESSOA,Transferência,cartao,Bradesco
+PESSOA,Outros,cartao,Bradesco
 SUPERMERCADO SERVE BEM,Mercado,cartao,Bradesco
 RUYCE ACABAMENTOS E 01/05,Moradia,cartao,Bradesco
 DROGASIL1138  01/02,Saúde,cartao,Bradesco
@@ -113,14 +112,14 @@ SuperMixMaterial,Moradia,cartao,Bradesco
 PORTUCALE PREMIUM,Alimentação,cartao,Bradesco
 Supervisao,Outros,cartao,Bradesco
 StereoCar 01/08,Transporte,cartao,Bradesco
-PESSOA 01/03,Transferência,cartao,Bradesco
+PESSOA 01/03,Outros,cartao,Bradesco
 SAVOL TOYOTA SBC 01/05,Transporte,cartao,Bradesco
 SEGURO SUPERPROTEGIDO,Outros,cartao,Bradesco
 NUTTY BARAVIAN - SHOP.,Alimentação,cartao,Bradesco
 RAIA DROGASIL SA 02/03,Saúde,cartao,Bradesco
 GRUPO DEOUVIDOS 02/12,Saúde,cartao,Bradesco
 ALB PRODUTOS NATURAIS,Mercado,cartao,Bradesco
-CAPPTA *PESSOA,Lazer,cartao,Bradesco
+CAPPTA *PESSOA,Outros,cartao,Bradesco
 IPE CAMPOS,Lazer,cartao,Bradesco
 LibelulasRoupasE,Compras,cartao,Bradesco
 REDE TRIUNFO,Transporte,cartao,Bradesco
@@ -137,3 +136,433 @@ ARM FERNANDO SBR,Compras,cartao,Bradesco
 BRIL STORE,Compras,cartao,Bradesco
 LOJA DO BENEFICIO,Compras,cartao,Bradesco
 CEDRO COMERCIO ELETR01/03,Compras,cartao,Bradesco
+Compra Meio De Transporte - No Estabelecimento Metro*1t -vzvm Sao Paulo Bra,Transporte,conta,Inter
+Compra no débito - Jmadega Sao Paulo Bra,Alimentação,conta,Inter
+Compra no débito - Ticketmais Tubarao Bra,Lazer,conta,Inter
+Compra no débito - Zig*refsp Sao Paulo Bra,Alimentação,conta,Inter
+Compra no débito - Nowigo Santa Rita Do Bra,Outros,conta,Inter
+Resgate - Cdb Porq Obj Banco Inter Sa,Transferência,conta,Inter
+Compra no débito - PESSOA Sao Bernardo Bra,Outros,conta,Inter
+Compra no débito - PESSOA Sao Paulo Bra,Outros,conta,Inter
+Compra no débito - Oxxo Deodoro Sao Bernardo Bra,Mercado,conta,Inter
+Compra no débito - Metropole 118 Sao Bernardo Bra,Compras,conta,Inter
+Compra no débito - Igf Comercio De Alimen Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - Lojas Mel Sao Bernardo Sao Bernardo Bra,Compras,conta,Inter
+Aplicação - Cdb Porq Obj Banco Inter Sa,Transferência,conta,Inter
+Compra Meio De Transporte - No Estabelecimento Metro Rj Rio De Janeir Bra,Transporte,conta,Inter
+Compra no débito - Drogarias Pacheco Rio De Janeir Bra,Saúde,conta,Inter
+Compra no débito - Maktub Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - Lyongastronomia Santos Bra,Alimentação,conta,Inter
+Compra no débito - Setor Financeiro Even Santos Bra,Outros,conta,Inter
+Compra no débito - Paes E Doces Palma Santos Bra,Alimentação,conta,Inter
+Compra no débito - 236 Liv Ctba Sao Bernardo Bra,Compras,conta,Inter
+Compra no débito - Kfc Golden Square Sh Sao Jose Do R Bra,Alimentação,conta,Inter
+Compra no débito - Shopping Golden Square Sao Bernardo Bra,Transporte,conta,Inter
+Compra no débito - Minimercado Dusi Sao Bernardo Bra,Mercado,conta,Inter
+Compra no débito - Manza Sushi Restaurant Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - Drogal Campinas Xxvii Piracicaba Bra,Saúde,conta,Inter
+Compra no débito - Outback Sao Bernardo Sao Bernardo Bra,Alimentação,conta,Inter
+Resgate - Cdb Credito Banco Inter Sa,Transferência,conta,Inter
+Compra no débito - Pastelaria Miyagisan Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - Acai Formosa Ilha Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - Zanon's Sbc Comercio V Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - Drogaria Sao Paulo 406 Sao Bernardo Bra,Saúde,conta,Inter
+Compra no débito - Lojas Americanas 75 Sao Bernardo Bra,Compras,conta,Inter
+Compra no débito - Shopping Metropole Sao Bernardo Bra,Transporte,conta,Inter
+Compra no débito - Augusto Cafe Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - Oxe Santos Bra,Lazer,conta,Inter
+Compra no débito - Cinemark Golden Square Sao Bernardo Bra,Lazer,conta,Inter
+Compra no débito - Drogaria Sao Paulo 194 Sao Bernardo Bra,Saúde,conta,Inter
+Aplicação - Cdb Credito Banco Inter Sa,Transferência,conta,Inter
+Compra no débito - PESSOA Santos Bra,Outros,conta,Inter
+Compra no débito - Hangar Parking Sao Caetano D Bra,Transporte,conta,Inter
+Compra no débito - 394 - Riachuelo-s B Ca Sao Bernardo Bra,Compras,conta,Inter
+Compra no débito - Daiso 09 Sao Bernardo Bra,Compras,conta,Inter
+Compra no débito - Mp *doces Nova Iguau Bra,Alimentação,conta,Inter
+Compra no débito - Hdcar Embu Das Arte Bra,Outros,conta,Inter
+Compra no débito - Lanchonete Estrela Da Sao Paulo Bra,Alimentação,conta,Inter
+Compra no débito - Mp *3aespetos So Paulo Bra,Alimentação,conta,Inter
+Compra no débito - Mp *PESSOA Diadema Bra,Outros,conta,Inter
+Compra no débito - Mp *bebidaderuafr So Paulo Bra,Alimentação,conta,Inter
+Compra no débito - P.f.comercio De Prod 9 Sao Paulo Bra,Outros,conta,Inter
+Compra no débito - Autopass S.a*atm Tmob Sao Paulo Bra,Transporte,conta,Inter
+Compra no débito - Caires Sao Paulo Bra,Alimentação,conta,Inter
+Compra no débito - Carnaval 2026 Sao Paulo Bra,Lazer,conta,Inter
+Compra no débito - Kmx Agency Ltda Sao Paulo Bra,Outros,conta,Inter
+Compra no débito - Mp *PESSOA Osasco Bra,Outros,conta,Inter
+Compra no débito - Ana Rosa Sao Paulo Bra,Outros,conta,Inter
+Compra no débito - Mac Fei Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - Mp *PESSOA So Paulo Bra,Outros,conta,Inter
+Compra no débito - PESSOA Francisco Mor Bra,Outros,conta,Inter
+Compra no débito - Auto Posto Brigadeiro Sao Paulo Bra,Transporte,conta,Inter
+Compra Meio De Transporte - No Estabelecimento Top Sp Tarfa* Sao Paulo Bra,Transporte,conta,Inter
+Compra no débito - Trato Fino Ii Sao Bernardo Bra,Alimentação,conta,Inter
+Pagamento efetuado - Fatura cartão Inter,Outros,conta,Inter
+Compra no débito - Kalunga Juru*kalunga 0 Sao Bernardo Bra,Compras,conta,Inter
+Compra no débito - Allinsbc Sao Bernardo Bra,Outros,conta,Inter
+Compra no débito - Mercadao Guaruja Guaruja Bra,Mercado,conta,Inter
+Compra no débito - Pdv*farmais Guaruja Uaruja Bra,Saúde,conta,Inter
+Compra no débito - Cedro Do Libano Guaruja Bra,Alimentação,conta,Inter
+Compra no débito - Cha Das Cinco Guaruja Bra,Alimentação,conta,Inter
+Compra no débito - Vend Perto Machines Sao Paulo Bra,Alimentação,conta,Inter
+Compra no débito - Srbfoodlanchonete Praia Grande Bra,Alimentação,conta,Inter
+Compra no débito - The Best Acai Praia Praia Grande Bra,Alimentação,conta,Inter
+Compra no débito - Cotton On Sao Bernardo Sao Bernardo Bra,Compras,conta,Inter
+Compra no débito - Youcom S Bernardo P Sh Sao Bernardo Bra,Compras,conta,Inter
+Compra no débito - Daiso 08 Sao Bernardo Bra,Compras,conta,Inter
+Compra no débito - Adega 54 Guaruja Bra,Alimentação,conta,Inter
+Compra no débito - Jim.com* PESSOA Guaruja Bra,Outros,conta,Inter
+Compra no débito - Paris 6 Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - Popeyes Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - Estacionamento Marecha Sao Bernardo Bra,Transporte,conta,Inter
+Compra no débito - Sorvetes Naturais S.a Sao Bernardo Bra,Alimentação,conta,Inter
+Aplicação - Cdb Credito Banco Inter S A,Transferência,conta,Inter
+Compra no débito - Drogaria Sao Paulo Sao Bernardo Bra,Saúde,conta,Inter
+Compra no débito - Sanduicheira Petropoli Sao Bernardo Bra,Alimentação,conta,Inter
+Debito Iof De Inv - 08836,Outros,conta,Inter
+Debito De Inv - 08834,Transferência,conta,Inter
+Compra no débito - Bem Barato Sao Bernardo Bra,Mercado,conta,Inter
+Compra Meio De Transporte - No Estabelecimento Bernatrans T*1t - Sao Bernardo Bra,Transporte,conta,Inter
+Compra no débito - Augustuscafe Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - Milenio Ervas Natura Sao Bernardo Bra,Mercado,conta,Inter
+Compra no débito - Irises Producoes E Eve Sao Luis Bra,Lazer,conta,Inter
+Compra no débito - Fort 585 Sp Sao Bernardo Bra,Mercado,conta,Inter
+Compra no débito - PESSOA Ribeirao Pire Bra,Outros,conta,Inter
+Compra no débito - Pontodoespetinho Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Jujuca Bombonieri Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Drogaria Sao Paulo 194 Sao Bernardo Bra,Saúde,conta,Inter
+Compra no débito - No Estabelecimento PESSOA Sao Bernardo Bra,Outros,conta,Inter
+Compra no débito - No Estabelecimento Lanches Mac Fei Ltda Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Lanches Mac Fei Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Chiquinho Sorvetes Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Lanchonete Batacla Lt Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Hortifruti Lusitania Sao Bernardo Bra,Mercado,conta,Inter
+Compra no débito - No Estabelecimento Jujuca Bomboniere Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Vila Tolentino Santos Bra,Outros,conta,Inter
+Compra no débito - No Estabelecimento Sorveteria Bamba Santos Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Ifd*manza Conceito Jardim Do Mar Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Augusto Cafe Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Cpagestaode Sao Paulo Bra,Outros,conta,Inter
+Compra no débito - No Estabelecimento Autopass S.a*atm Tmob Sao Paulo Bra,Transporte,conta,Inter
+Compra no débito - No Estabelecimento Cacaushow Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Bar Central Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Auto Posto Estonia 6 L Santo Andre Bra,Transporte,conta,Inter
+Compra no débito - No Estabelecimento Oxxo Wallace Sao Bernardo Bra,Mercado,conta,Inter
+Compra no débito - No Estabelecimento Pastelaria Miyagisan Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Augustuscafe Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Fabocci E Cheidde Lanc Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Viacao Cometa S A Sao Bernardo Bra,Transporte,conta,Inter
+Compra no débito - No Estabelecimento Santos Diadema Com De Sao Bernardo Bra,Outros,conta,Inter
+Compra no débito - No Estabelecimento Dohnova So Bernardo D Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Bfi Espetinhos E Lanch Sao Caetano D Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Vendify Comercio Locac Sao Paulo Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Nutricar Brasil Comerc Santana De Pa Bra,Mercado,conta,Inter
+Compra no débito - No Estabelecimento Vim Esporte E Tecnolog Sao Bernardo Bra,Compras,conta,Inter
+Compra no débito - No Estabelecimento Mmom Cosmeticos Sao Bernardo Bra,Compras,conta,Inter
+Compra no débito - No Estabelecimento Ichibanyakissoba Sao Bernardo Bra,Alimentação,conta,Inter
+Estorno - Recarga Vivo,Outros,conta,Inter
+Compra no débito - No Estabelecimento Oishiipasteis Santo Andre Bra,Alimentação,conta,Inter
+Aplicação - Cdb Porquinho Banco Inter Sa,Transferência,conta,Inter
+Resgate - Cdb Porquinho Banco Inter Sa,Transferência,conta,Inter
+Estorno - Aplicação,Transferência,conta,Inter
+Aplicação - Inter Conservador Firf Cp,Transferência,conta,Inter
+Aplicação - Itaú Janeiro Distribuidores Fif Cic Rf Lp,Transferência,conta,Inter
+Aplicação - Mapfre Confianza Firf Referenciado Di Cp,Transferência,conta,Inter
+Débito Renda Fixa - Cdb Lebes Finan,Transferência,conta,Inter
+Depósito - Global Account,Transferência,conta,Inter
+IOF - Global Account,Outros,conta,Inter
+Compra no débito - No Estabelecimento Esccomercioeservi Santo Andre Bra,Outros,conta,Inter
+Compra no débito - No Estabelecimento PESSOA Santo Andre Bra,Outros,conta,Inter
+Compra no débito - No Estabelecimento Munizchurros Sao Paulo Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Nowigo Santa Rita Do Bra,Outros,conta,Inter
+Pix recebido devolvido - PESSOA,Transferência,conta,Inter
+Compra Meio De Transporte - No Estabelecimento Bernatrans T*ra - Sao Bernardo Bra,Transporte,conta,Inter
+Compra no débito - No Estabelecimento Mana Poke Sbc Sao Bernardo Bra,Alimentação,conta,Inter
+Compra Meio De Transporte - No Estabelecimento Bernatrans T*descripti Sao Bernardo Bra,Transporte,conta,Inter
+Compra no débito - No Estabelecimento Rock&sticks Sao Bernardo Bra,Outros,conta,Inter
+Compra Meio De Transporte - No Estabelecimento Top Sp Tarfa*descripti Sao Paulo Bra,Transporte,conta,Inter
+Cashback - Xbox - 7867bb64-b1d3-42c3-a2ca-5bdd2b,Outros,conta,Inter
+Compra no débito - No Estabelecimento Autopass S.a. Sao Paulo Bra,Transporte,conta,Inter
+Compra no débito - No Estabelecimento Mp *PESSOA S O Paulo Bra,Outros,conta,Inter
+Compra no débito - No Estabelecimento Lanchonete Acopiara Sao Paulo Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Mp *dungaservicosgerai Osasco Bra,Outros,conta,Inter
+Compra no débito - No Estabelecimento Mp *PESSOA Osasco Bra,Outros,conta,Inter
+Compra no débito - No Estabelecimento Mp *tabacariananu Osasco Bra,Compras,conta,Inter
+Compra no débito - No Estabelecimento Marmel Mf Indaiatuba Bra,Outros,conta,Inter
+Compra no débito - No Estabelecimento Mp *savrepacaoaut Osasco Bra,Transporte,conta,Inter
+Compra no débito - No Estabelecimento PESSOA Sao Paulo Bra,Outros,conta,Inter
+Compra no débito - No Estabelecimento R B Cafe Sao Paulo Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Carrefour Brigadeiro I Sao Paulo Bra,Mercado,conta,Inter
+Compra no débito - No Estabelecimento Fts Alimentos Sao Paulo Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Kfc Golden Square Shop Sao Jose Do R Bra,Alimentação,conta,Inter
+Compra no débito - No Estabelecimento Kfc Miramar Santos Bra,Alimentação,conta,Inter
+Compra Meio De Transporte - No Estabelecimento Autopass S.a*descripti Sao Paulo Bra,Transporte,conta,Inter
+Cashback - Valorant - ebe63be8-d31f-4070-b714-c73b6943fe2f,Outros,conta,Inter
+Compra no débito - Leitura Abc Livraria E Sao Bernardo Bra,Compras,conta,Inter
+Compra no débito - Chiquinho Sorvetes Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - 3724 Grsa Gr Club Cro Sao Paulo Bra,Alimentação,conta,Inter
+Compra no débito - Autopass S.a. Sao Paulo Bra,Transporte,conta,Inter
+Compra no débito - 3730 - Grsa Upper Crus Sao Paulo Bra,Alimentação,conta,Inter
+Compra no débito - 3734 - Grsa Cafe Donut Sao Paulo Bra,Alimentação,conta,Inter
+Compra no débito - Zig *estrela Produc Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - Supra Berno Sao Bernardo Bra,Lazer,conta,Inter
+Compra no débito - Saopaulogrillbar Sao Bernardo Bra,Alimentação,conta,Inter
+Vencimento Renda Fixa - Lci Liq 90 Dias Banco Inter Sa,Transferência,conta,Inter
+Cashback - STEAM - e9ce24d2-e3ef-4456-ae09-0c0e4d023a7b,Outros,conta,Inter
+Cashback - STEAM - 3929d4f7-066d-4d99-b626- b7d9a6,Outros,conta,Inter
+Resgate - Cdb Pos Di Liq. Banco Inter Sa,Transferência,conta,Inter
+Compra no débito - Zig The Global Funtech Sao Paulo Bra,Alimentação,conta,Inter
+Compra no débito - Lanchonete Signello Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - Mp *krog721 So Bernardo D Bra,Alimentação,conta,Inter
+Compra no débito - Cookie Da House Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - Guanabarasolucoes Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - Pastelaria Fino Tacho Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - Uber *uber *trip Sao Paulo Bra,Transporte,conta,Inter
+Compra no débito - Doceira Nova Priscila Sao Bernardo Bra,Alimentação,conta,Inter
+Cashback - Google Play - 9a90d6a1-dcd7-4a0c-bdf7-c69592ab9b90,Outros,conta,Inter
+Compra no débito - Burger King Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - Saocaetanosthshp Sao Caetano D Bra,Outros,conta,Inter
+Compra no débito - O Burgues Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - Pizzariae Sao Bernardo Bra,Alimentação,conta,Inter
+Compra no débito - Zig*jatoloko Sao Bernardo Bra,Alimentação,conta,Inter
+Cashback - STEAM - 1228fe80-074f-465a-a754-9afccf,Outros,conta,Inter
+Cashback - STEAM - 00a2dacb-9514-4bbe-b14a- bd88c,Outros,conta,Inter
+Compra no débito - Pag*mepayfinancial Belo Horizont Bra,Outros,conta,Inter
+Compra no débito - Cafe Mineiro Porto Seguro Bra,Alimentação,conta,Inter
+Compra no débito - Pag*denvercomerciode Porto Seguro Bra,Alimentação,conta,Inter
+Compra no débito - Porto Mar Porto Seguro Bra,Outros,conta,Inter
+Compra no débito - Supermercado Da Orla Porto Seguro Bra,Mercado,conta,Inter
+Compra no débito - Denver Comercio De Beb Porto Seguro Bra,Alimentação,conta,Inter
+Compra no débito - Cartao *restaurante Wa Porto Seguro Bra,Alimentação,conta,Inter
+Compra no débito - Pg *ton PESSOA Porto Seguro Bra,Outros,conta,Inter
+Compra no débito - Mp *barracadamama Porto Seguro Bra,Alimentação,conta,Inter
+Compra no débito - Pag*PESSOA Porto Seguro Bra,Outros,conta,Inter
+Compra no débito - Cabana Area Beach-bea Porto Seguro Bra,Alimentação,conta,Inter
+Google G1AI101M,Assinaturas,cartao,Inter
+PAGAMENTO ON LINE,Outros,cartao,Inter
+Google CLOUD RSwTPP,Assinaturas,cartao,Inter
+Bacio di Latte-LJ0016,Alimentação,cartao,Inter
+CINEMARK SHOP CIDADE S,Lazer,cartao,Inter
+ANTHROPIC* CLAUDE SUB,Assinaturas,cartao,Inter
+IOF INTERNACIONAL,Outros,cartao,Inter
+MOBY DICK,Lazer,cartao,Inter
+EBN*CANVA0503,Assinaturas,cartao,Inter
+MERCADOPAGO *EBAZA04/12,Compras,cartao,Itaú
+PES SEM DOR LTDA E02/10,Saúde,cartao,Itaú
+KABUM 02/10,Compras,cartao,Itaú
+KABUM,Compras,cartao,Itaú
+OPTICA MIMO -CT 02/04,Saúde,cartao,Itaú
+PORTO CONSORCIO,Outros,cartao,Itaú
+CORIS BRASIL TURIS01/04,Lazer,cartao,Itaú
+TagItau*PESSOA,Transporte,cartao,Itaú
+FORT 585 SP,Mercado,cartao,Itaú
+PEAKY FITNESS LTDA,Saúde,cartao,Itaú
+ROMMA PARKING,Transporte,cartao,Itaú
+FASHION PHONE,Compras,cartao,Itaú
+PADARIA C FLOR CASTE,Alimentação,cartao,Itaú
+BELISSIMA MODA,Compras,cartao,Itaú
+ORINTER TOUR E TRA04/10,Lazer,cartao,Itaú
+ORINTER TOUR E TRA01/02,Lazer,cartao,Itaú
+ORINTER TOUR E TRA01/03,Lazer,cartao,Itaú
+AUTO POSTO PERY RONCHE,Transporte,cartao,Itaú
+EJ STUDIO -CT 02/06,Outros,cartao,Itaú
+EJ STUDIO -CT,Outros,cartao,Itaú
+CELEBRITA,Outros,cartao,Itaú
+PESSOA 01/02,Outros,cartao,Itaú
+PERFUMAKE 02/02,Compras,cartao,Itaú
+CACAUSHOW,Alimentação,cartao,Itaú
+BEACH STATION SPORTS L,Lazer,cartao,Itaú
+MaisMeias,Compras,cartao,Itaú
+ATACADAO 943 AS,Mercado,cartao,Itaú
+ATACADAO 675 SA,Mercado,cartao,Itaú
+HS SHOP METROPOLE,Compras,cartao,Itaú
+00021 SH METROPOLE,Transporte,cartao,Itaú
+OUTBACK SAO BERNARDO,Alimentação,cartao,Itaú
+DNA ARENA BEACH,Lazer,cartao,Itaú
+CHARLOT,Alimentação,cartao,Itaú
+DROGARIA ERNESTA PELOS,Saúde,cartao,Itaú
+CHOPERIA A CANDEIA,Alimentação,cartao,Itaú
+YOGA MODELADORES SBC I,Compras,cartao,Itaú
+JM MAGAZINE,Compras,cartao,Itaú
+ZIG*ARENA 40 GRAUS,Alimentação,cartao,Itaú
+LAVORIA ADMINISTRACAO,Outros,cartao,Itaú
+ARENA,Lazer,cartao,Itaú
+LEROY MERLIN,Moradia,cartao,Itaú
+HARMONIA CAFETERIA,Alimentação,cartao,Itaú
+EDZUPMESEXPER,Assinaturas,cartao,Itaú
+TAKAYA,Compras,cartao,Itaú
+NOVA HORTIFRUTI P R,Mercado,cartao,Itaú
+SONDA SBCAMPO,Mercado,cartao,Itaú
+ENERGY SERVICOS EDUCAT,Educação,cartao,Itaú
+HOTELDO 01/03,Lazer,cartao,Itaú
+EMPORIO FLORIO,Mercado,cartao,Itaú
+HFISCHER *HFISC01/06,Outros,cartao,Itaú
+MaxxPark,Transporte,cartao,Itaú
+LIVELO S.A. 11/12,Outros,cartao,Itaú
+DECATHLON ECOMMERC07/10,Compras,cartao,Itaú
+OPENAI *CHATGPT SUBSCR,Assinaturas,cartao,Itaú
+HFISCHER *HFISC03/06,Outros,cartao,Itaú
+MERCADOPAGO *EBAZA06/12,Compras,cartao,Itaú
+ORINTER TOUR E TRA03/03,Lazer,cartao,Itaú
+PES SEM DOR LTDA E04/10,Saúde,cartao,Itaú
+MERCADOLIVRE*LOJAE02/03,Compras,cartao,Itaú
+KABUM 04/10,Compras,cartao,Itaú
+SAM S CLUB LJ 6532 PDV,Mercado,cartao,Itaú
+OPTICA MIMO -CT 04/04,Saúde,cartao,Itaú
+FONTELEONE BAR,Alimentação,cartao,Itaú
+TizzoComercioDe,Outros,cartao,Itaú
+IBIS STYLES RIO PR01/06,Lazer,cartao,Itaú
+JIM.COM* STE-MP MONT,Outros,cartao,Itaú
+EMPORIO LORO LTDA,Mercado,cartao,Itaú
+ASSAI ATACADISTA LJ10,Mercado,cartao,Itaú
+ORINTER TOUR E TRA06/10,Lazer,cartao,Itaú
+EJ STUDIO -CT 04/06,Outros,cartao,Itaú
+CORIS BRASIL TURIS03/04,Lazer,cartao,Itaú
+HOTELDO 03/03,Lazer,cartao,Itaú
+PAYGO*TATUAPE BEACH TE,Lazer,cartao,Itaú
+CALDO DO ALE,Alimentação,cartao,Itaú
+PASTEIS KING LTDA,Alimentação,cartao,Itaú
+CRANEUM,Outros,cartao,Itaú
+C PERNAMBUCANAS LJ01/02,Compras,cartao,Itaú
+FRUTARIA IPIRANGA,Mercado,cartao,Itaú
+MANA POKE SBC,Alimentação,cartao,Itaú
+CHOCOLATES SAVOIA SBC,Alimentação,cartao,Itaú
+CENTRO EQUESTRE SAO B,Lazer,cartao,Itaú
+Goldenmeias,Compras,cartao,Itaú
+SAMSONITE BRASIL LTDA,Compras,cartao,Itaú
+SONEDA PERFUMARIA,Compras,cartao,Itaú
+KOPENHAGEN,Alimentação,cartao,Itaú
+Pointipiranga,Outros,cartao,Itaú
+RECANTO IPIRANGA,Outros,cartao,Itaú
+OXXO WALLACE,Mercado,cartao,Itaú
+SAM S SAO BERNARDO DO,Mercado,cartao,Itaú
+ZUKENSHOES,Compras,cartao,Itaú
+DROGARIA SAO PAULO 194,Saúde,cartao,Itaú
+MATHEUS PRESENTES,Compras,cartao,Itaú
+ASAAS     *EBTE 01/06,Outros,cartao,Itaú
+AmyrisReal,Compras,cartao,Itaú
+CASA DA BORRA,Alimentação,cartao,Itaú
+LOJAS AMERICANAS 1250,Compras,cartao,Itaú
+OFICIAL FARMA,Saúde,cartao,Itaú
+PIZZA HUT SAO BERNARDO,Alimentação,cartao,Itaú
+CHIQUINHO SORVETES,Alimentação,cartao,Itaú
+PG *PEDIDO PAGO IN01/02,Outros,cartao,Itaú
+LOCCITANE PLAZA SAO BE,Compras,cartao,Itaú
+MUNDO RURAL PI,Outros,cartao,Itaú
+IBIS STYLES TAUBATE,Lazer,cartao,Itaú
+DNA ARENA BEACH SPORTS,Lazer,cartao,Itaú
+ARENA 40 GRAUS,Lazer,cartao,Itaú
+LGA GELATO LTDA,Alimentação,cartao,Itaú
+PANIF SAO GERALDO II,Alimentação,cartao,Itaú
+MAP AUTO DA PONTE,Transporte,cartao,Itaú
+ROYAL SWEET,Alimentação,cartao,Itaú
+VIP AUTO POSTO LTDA,Transporte,cartao,Itaú
+MERCADO EXTRA-1712,Mercado,cartao,Itaú
+AUTO POSTO JORDANOPOLI,Transporte,cartao,Itaú
+DECATHLON ECOMMERC09/10,Compras,cartao,Itaú
+DECATHLON ECOMMERC10/10,Compras,cartao,Itaú
+ORINTER TOUR E TRA07/10,Lazer,cartao,Itaú
+MERCADOPAGO *EBAZA07/12,Compras,cartao,Itaú
+EJ STUDIO -CT 05/06,Outros,cartao,Itaú
+PES SEM DOR LTDA E05/10,Saúde,cartao,Itaú
+KABUM 05/10,Compras,cartao,Itaú
+CORIS BRASIL TURIS04/04,Lazer,cartao,Itaú
+HFISCHER *HFISC04/06,Outros,cartao,Itaú
+EJ STUDIO -CT 03/06,Outros,cartao,Itaú
+MERCADOLIVRE*LOJAE03/03,Compras,cartao,Itaú
+PG *PEDIDO PAGO IN02/02,Outros,cartao,Itaú
+C PERNAMBUCANAS LJ02/02,Compras,cartao,Itaú
+IBIS STYLES RIO PR02/06,Lazer,cartao,Itaú
+ASAAS *EBTE 02/06,Outros,cartao,Itaú
+RODOPOSTO SA-CT RLOS,Transporte,cartao,Itaú
+DESIGN DOS P-CT,Outros,cartao,Itaú
+KOPENHAGEN H-CT BRAS,Alimentação,cartao,Itaú
+IBIS STYLES RIO PRETO,Lazer,cartao,Itaú
+CEA SBG 114 -CT,Compras,cartao,Itaú
+KFC GOLDEN S-CT E SH,Alimentação,cartao,Itaú
+FIREFLY COME-CT DE CA,Compras,cartao,Itaú
+236 LIV CTBA-CT 372574,Compras,cartao,Itaú
+SACOLAO SAUD-CT,Mercado,cartao,Itaú
+MaderoIndust-CT,Alimentação,cartao,Itaú
+MAX POTIREND-CT,Outros,cartao,Itaú
+PG *PEDIDO PAGO INTERN,Outros,cartao,Itaú
+MERCADO ACOC-CT,Mercado,cartao,Itaú
+GRAAL SAO CA-CT,Alimentação,cartao,Itaú
+C PERNAMBUCANAS LJ 106,Compras,cartao,Itaú
+ASAAS     *EBTE 02/06,Outros,cartao,Itaú
+FILIAL GOLDEN SQUARE S,Outros,cartao,Itaú
+BRAZILIAN CONVENIENCE,Mercado,cartao,Itaú
+FILIAL DIADEMA,Outros,cartao,Itaú
+MAGUIMA COM DE ROUPAS,Compras,cartao,Itaú
+KOPENHAGEN HOSP BRAS,Alimentação,cartao,Itaú
+PAES E DOCE NOVA GERAC,Alimentação,cartao,Itaú
+DONA DEOLA,Alimentação,cartao,Itaú
+ABC GARDEN LTDA,Compras,cartao,Itaú
+KALUNGA JURUBATUBA,Compras,cartao,Itaú
+TOTALPASS,Saúde,cartao,Itaú
+E AGENCIAS*874634301/02,Outros,cartao,Itaú
+PECORINON GOLDEN SBC R,Alimentação,cartao,Itaú
+HNA*OBOTICARIO,Compras,cartao,Itaú
+LOJAS 1A99,Compras,cartao,Itaú
+CINCO M COM ATACAD,Mercado,cartao,Itaú
+GOTCKTS*ORLANDOMAGICPA,Lazer,cartao,Itaú
+CAPIM T*Clinica Esperi,Saúde,cartao,Itaú
+PONTO MGM,Outros,cartao,Itaú
+LOJAS AMERICANAS 75,Compras,cartao,Itaú
+ORINTER TOUR E TRA08/10,Lazer,cartao,Itaú
+MERCADOPAGO *EBAZA08/12,Compras,cartao,Itaú
+EJ STUDIO -CT 06/06,Outros,cartao,Itaú
+PES SEM DOR LTDA E06/10,Saúde,cartao,Itaú
+KABUM 06/10,Compras,cartao,Itaú
+HFISCHER *HFISC05/06,Outros,cartao,Itaú
+IBIS STYLES RIO PR03/06,Lazer,cartao,Itaú
+ASAAS *EBTE 03/06,Outros,cartao,Itaú
+E AGENCIAS*874634302/02,Outros,cartao,Itaú
+PostoVillageMall,Transporte,cartao,Itaú
+GOLDEN 11 COMERCIO DE,Outros,cartao,Itaú
+MANIA DE CHURRASCO,Alimentação,cartao,Itaú
+HOTELDO,Lazer,cartao,Itaú
+MERCADOPAGO *EBAZA05/12,Compras,cartao,Itaú
+PES SEM DOR LTDA E03/10,Saúde,cartao,Itaú
+ORINTER TOUR E TRA02/02,Lazer,cartao,Itaú
+KABUM 03/10,Compras,cartao,Itaú
+HFISCHER *HFISC02/06,Outros,cartao,Itaú
+OPTICA MIMO -CT 03/04,Saúde,cartao,Itaú
+HFISCHER *HFISCHER,Outros,cartao,Itaú
+EJ STUDIO -CT 01/06,Outros,cartao,Itaú
+ORINTER TOUR E TRA02/03,Lazer,cartao,Itaú
+ORINTER TOUR E TRAVEL,Lazer,cartao,Itaú
+HTM*TemplateGrowarq,Outros,cartao,Itaú
+BOLOGNANI E MARTINS HO,Outros,cartao,Itaú
+ORINTER TOUR E TRA05/10,Lazer,cartao,Itaú
+OPadocaGastro,Alimentação,cartao,Itaú
+CORIS BRASIL TURIS02/04,Lazer,cartao,Itaú
+ArenaSports,Lazer,cartao,Itaú
+PESSOA02/02,Outros,cartao,Itaú
+PIZZARIA SAO GERALDO C,Alimentação,cartao,Itaú
+HOTELDO 02/03,Lazer,cartao,Itaú
+ARENA SPORTS,Lazer,cartao,Itaú
+MERCADOLIVRE*LOJAELEC,Compras,cartao,Itaú
+TRG PARK ESTACIONAMENT,Transporte,cartao,Itaú
+TICKETMASTER BRASIL LT,Lazer,cartao,Itaú
+BAVO RESTAURANTE,Alimentação,cartao,Itaú
+KOPENHAGEN SHOPPING,Alimentação,cartao,Itaú
+PG *SMARTFIN COBRANCAS,Outros,cartao,Itaú
+ATACADAO 675-CT,Mercado,cartao,Itaú
+ENCONTRO DOS PAES,Alimentação,cartao,Itaú
+MLP *KaBuM-KaBuM,Compras,cartao,Itaú
+TRICOLAR,Outros,cartao,Itaú
+DAISO BRASIL,Compras,cartao,Itaú
+Riachuelo,Compras,cartao,Itaú
+5M COMERCIO ATACADISTA,Mercado,cartao,Itaú
+GOLDEN GRILL,Alimentação,cartao,Itaú
+DONA VASSOURA,Compras,cartao,Itaú
+SORVETES NATURAIS S.A,Alimentação,cartao,Itaú
+CORPO E VIDA,Outros,cartao,Itaú
+REINODAFANTASIA,Compras,cartao,Itaú
+MP *TALHAS,Outros,cartao,Itaú
+LIVELO S.A. 12/12,Outros,cartao,Itaú
+DECATHLON ECOMMERC08/10,Compras,cartao,Itaú
+ASSAI ATACAD-CT LJ10,Mercado,cartao,Itaú
+MERCADOLIVRE*LOJAE01/03,Compras,cartao,Itaú
+GARDENNIA ALIMENTACAO,Alimentação,cartao,Itaú
