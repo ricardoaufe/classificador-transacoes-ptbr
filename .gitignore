@@ -1,0 +1,6 @@
+data/raw/*
+!data/raw/.gitkeep
+
+.venv/
+
+data/processed/para_rotular*.csv
