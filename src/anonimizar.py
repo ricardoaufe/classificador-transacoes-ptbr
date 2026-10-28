@@ -9,6 +9,7 @@ Uso:
 Saída: data/processed/para_rotular.csv (acrescenta linhas se o arquivo já existir)
 """
 import argparse
+import html
 import os
 import re
 
@@ -18,6 +19,8 @@ import pandas as pd
 SUBSTITUICOES = [
     # Nome depois de "Pix - " ou "Transferência ... - " (formato da conta Nubank)
     (r"(?i)((?:pix|transfer[êe]ncia)[^-]*\s-\s)[^-]+", r"\1PESSOA "),
+    # Nome do titular em "Pagamento Fatura - NOME" (Inter)
+    (r"(?i)(pagamento fatura\s-\s).+", r"\1PESSOA"),
     # CPF completo ou mascarado: 123.456.789-00, •••.456.789-••
     (r"[\d•*]{3}\.[\d•*]{3}\.[\d•*]{3}-[\d•*]{2}", " "),
     # CNPJ: 12.345.678/0001-90
@@ -40,6 +43,7 @@ SUSPEITAS = r"(?i)\b(?:pix|transf|ted|doc|enviad|recebid)"
 
 
 def anonimizar(texto: str) -> str:
+    texto = html.unescape(texto)  # "&amp;" vira "&"
     for padrao, troca in SUBSTITUICOES:
         texto = re.sub(padrao, troca, texto)
     return texto.strip(" -")
@@ -79,6 +83,9 @@ def main():
     saida["categoria"] = ""
     saida["fonte"] = args.fonte
     saida["revisar"] = saida["descricao"].str.contains(SUSPEITAS).map({True: "SIM", False: ""})
+
+    # Descrição que ficou vazia (ex.: só "Compra no débito - ") não serve para nada
+    saida = saida[saida["descricao"].str.contains(" - ")]
 
     if os.path.exists(args.saida):
         saida = pd.concat([pd.read_csv(args.saida, keep_default_na=False), saida])
