@@ -17,8 +17,11 @@ import pandas as pd
 
 # Cada item: (padrão regex, texto que entra no lugar)
 SUBSTITUICOES = [
+    # Código antes do nome em alguns Pix: "Cp :12345678-Maria" (sem isso o nome escapava)
+    (r"(?i)\bcp\s*:\s*\d+\s*-?\s*", ""),
     # Nome depois de "Pix - " ou "Transferência ... - " (formato da conta Nubank)
-    (r"(?i)((?:pix|transfer[êe]ncia)[^-]*\s-\s)[^-]+", r"\1PESSOA "),
+    # \b evita pegar "pix" dentro de outra palavra (ex.: "Pixel Games")
+    (r"(?i)(\b(?:pix|transfer[êe]ncia)\b[^-]*\s-\s)[^-]+", r"\1PESSOA "),
     # Nome do titular em "Pagamento Fatura - NOME" (Inter)
     (r"(?i)(pagamento fatura\s-\s).+", r"\1PESSOA"),
     # CPF completo ou mascarado: 123.456.789-00, •••.456.789-••
@@ -27,9 +30,12 @@ SUBSTITUICOES = [
     (r"\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}", " "),
     # E-mail (chave PIX)
     (r"\S+@\S+", " "),
-    # Agência e conta
-    (r"(?i)ag[êe]ncia:?\s*\S+", " "),
-    (r"(?i)conta:?\s*\S+", " "),
+    # Agência e conta, só quando vêm seguidas de número
+    # (antes apagava "Contabilidade", "Agencia de Viagens", "Pagamento de conta - Vivo")
+    (r"(?i)\bag[êe]ncia:?\s*\d\S*", " "),
+    (r"(?i)\bconta:?\s*\d\S*", " "),
+    # Telefone (chave PIX): (11) 98765-4321, 11 98765-4321
+    (r"\(?\b\d{2}\)?\s?9?\d{4}-\d{4}\b", " "),
     # Sequências longas de números (telefone, cartão, código de autorização)
     (r"\d{6,}", " "),
     # Traços que ficaram sobrando: "- -" vira "-"
@@ -84,8 +90,18 @@ def main():
     saida["fonte"] = args.fonte
     saida["revisar"] = saida["descricao"].str.contains(SUSPEITAS).map({True: "SIM", False: ""})
 
-    # Descrição que ficou vazia (ex.: só "Compra no débito - ") não serve para nada
-    saida = saida[saida["descricao"].str.contains(" - ")]
+    # Descrição que ficou vazia (ex.: só "Compra no débito", sem a loja) não serve para nada.
+    # Com várias colunas, descarta quando as colunas depois da primeira estão vazias.
+    # Com uma coluna só (Nubank), descarta só o que ficou vazio: antes, "Resgate RDB"
+    # e toda a fatura do cartão (sem " - ") eram descartadas sem aviso.
+    if len(args.coluna) > 1:
+        tem_detalhe = df[args.coluna[1:]].fillna("").astype(str).apply(lambda c: c.str.strip()).ne("").any(axis=1)
+    else:
+        tem_detalhe = saida["descricao"].str.strip() != ""
+    descartadas = (~tem_detalhe).sum()
+    saida = saida[tem_detalhe]
+    if descartadas:
+        print(f"{descartadas} linhas sem descrição descartadas")
 
     if os.path.exists(args.saida):
         saida = pd.concat([pd.read_csv(args.saida, keep_default_na=False), saida])
