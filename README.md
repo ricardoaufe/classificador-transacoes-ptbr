@@ -1,6 +1,6 @@
 # Classificador de Transações Bancárias (PT-BR)
 
-Modelo que recebe a descrição crua de uma transação bancária brasileira e devolve a categoria do gasto.
+Um modelo que lê a descrição crua de uma transação bancária brasileira e diz em que categoria o gasto se encaixa.
 
 ```
 "Compra no débito - IFD*CHURRASCO DO GU SE"    →  Alimentação
@@ -8,9 +8,9 @@ Modelo que recebe a descrição crua de uma transação bancária brasileira e d
 "Transferência enviada pelo Pix - PESSOA - ..." →  Transferência
 ```
 
-Quase não existem modelos ou datasets públicos para esse problema em português. Este projeto constrói os dois do zero: coleta e rotulagem dos dados, modelo, avaliação e publicação.
+Comecei este projeto para aprender machine learning na prática, do zero: nunca tinha usado pandas nem scikit-learn. Escolhi um problema real, com dados que eu mesmo coletei, porque quase não existem datasets ou modelos públicos para isso em português.
 
-> 🚧 **Em andamento.** Este README descreve só o que já foi feito e é atualizado a cada etapa.
+> 🚧 **Em andamento.** Este README conta o que já foi feito e é atualizado a cada etapa.
 
 ---
 
@@ -19,12 +19,13 @@ Quase não existem modelos ou datasets públicos para esse problema em portuguê
 | Etapa | Situação |
 |---|---|
 | Estrutura do repositório e ambiente | ✅ |
-| Dataset v1 (coleta, anonimização e rotulagem) | ✅ 667 transações, 4 bancos |
-| Exploração dos dados (pandas) | ✅ `notebooks/01_exploracao.ipynb` |
-| Baseline (TF-IDF + Regressão Logística) | ✅ F1 macro **0.614** · `notebooks/02_baseline.ipynb` |
-| Limpeza do texto e regras | ⏳ |
-| Dados sintéticos para categorias pequenas | ⏳ |
-| Fine-tuning (BERTimbau) | ⏳ |
+| Dataset (coleta, anonimização e rotulagem) | ✅ 667 transações, 4 bancos |
+| Exploração dos dados com pandas | ✅ `notebooks/01_exploracao.ipynb` |
+| Primeiro modelo (TF-IDF + Regressão Logística) | ✅ F1 macro **0.614** · `notebooks/02_baseline.ipynb` |
+| Limpeza do texto | ✅ F1 macro **0.624** · `notebooks/03_limpeza.ipynb` |
+| Regras + modelo (sistema híbrido) | ⏳ |
+| Dados sintéticos para as categorias pequenas | ⏳ |
+| Modelo de linguagem (BERTimbau) | ⏳ |
 | Publicação no Hugging Face + demo | ⏳ |
 
 ---
@@ -34,45 +35,59 @@ Quase não existem modelos ou datasets públicos para esse problema em portuguê
 ```
 classificador-transacoes-ptbr/
 ├── data/
-│   ├── raw/          # extratos originais e planilha de rotulagem (não versionado)
+│   ├── raw/          # extratos originais e planilha de rotulagem (não vão para o GitHub)
 │   └── processed/    # descrições anonimizadas e rotuladas
 ├── notebooks/
-│   ├── 01_exploracao.ipynb   # análise exploratória com pandas
-│   └── 02_baseline.ipynb     # TF-IDF + Regressão Logística e avaliação
+│   ├── 01_exploracao.ipynb   # primeiro contato com os dados
+│   ├── 02_baseline.ipynb     # primeiro modelo e avaliação
+│   └── 03_limpeza.ipynb      # limpeza do texto e ablation
 ├── src/
-│   ├── anonimizar.py         # extrato bruto → descrições anonimizadas
-│   └── exportar_rotulado.py  # planilha de rotulagem → CSV oficial, com validações
+│   ├── anonimizar.py         # tira nomes e documentos dos extratos
+│   ├── exportar_rotulado.py  # converte a planilha rotulada no CSV final
+│   └── limpeza.py            # limpa as descrições antes do modelo
 ├── requirements.txt
 └── README.md
 ```
 
 ---
 
-## Dataset
+## 1. Os dados
 
-### Fontes
-667 descrições reais e únicas, de quatro bancos e dois tipos de documento:
+### De onde vieram
+São 667 descrições reais, tiradas dos meus extratos e de faturas de cartão da família:
 
-| Banco | Extrato da conta (`conta`) | Fatura do cartão (`cartao`) |
+| Banco | Extrato da conta | Fatura do cartão |
 |---|---|---|
 | Inter | 238 | 9 |
 | Nubank | 50 | – |
 | Itaú | – | 318 |
 | Bradesco | – | 52 |
 
-Cada banco escreve a mesma loja de um jeito diferente. O Inter corta o nome do estabelecimento e cola a cidade logo depois (`Venzol E Frias Restaursao Bernardo Bra`). As faturas de cartão trazem nomes cortados, parcelas grudadas (`CEDRO COMERCIO ELETR01/03`) e prefixos de adquirente (`MP*`, `IFD*`, `EBN*`). Essa variedade é proposital: é o ruído que o modelo precisa aprender a ignorar.
+A primeira surpresa foi ver como cada banco escreve a mesma loja de um jeito. O Inter corta o nome e cola a cidade logo depois (`Venzol E Frias Restaursao Bernardo Bra`). As faturas cortam os nomes, grudam o número da parcela (`CEDRO COMERCIO ELETR01/03`) e colocam prefixos de maquininha (`MP*`, `IFD*`, `EBN*`). Esse ruído é justamente o que o modelo precisa aprender a ignorar.
 
-### Formato
-`data/processed/rotulado_v1.csv` (UTF-8, separado por vírgula):
+### Privacidade
+Extrato bancário tem nome, CPF e chave Pix. Antes de qualquer coisa, o script `src/anonimizar.py`:
+- guarda **só a descrição** (valor e data são descartados);
+- troca nomes de pessoas por `PESSOA`;
+- remove CPF, CNPJ, e-mails, telefones e números de conta;
+- marca as linhas suspeitas, que revisei uma por uma.
 
-| coluna | descrição |
-|---|---|
-| `descricao` | texto **bruto**, como veio do banco |
-| `categoria` | rótulo atribuído à mão |
-| `fonte` | `conta` (extrato) ou `cartao` (fatura) |
-| `banco` | banco de origem, para análise de erros por fonte |
+Os arquivos originais ficam em `data/raw/`, que está no `.gitignore` e nunca vai para o repositório.
 
-### Categorias
+```bash
+python src/anonimizar.py data/raw/extrato.csv --coluna Descrição --fonte conta
+python src/exportar_rotulado.py   # valida a planilha e gera data/processed/rotulado_v1.csv
+```
+
+### Rotulagem
+Rotulei tudo à mão numa planilha, em 11 categorias. Foi mais difícil do que eu esperava: um shopping é estacionamento ou compra? Uma adega é Alimentação ou Lazer? Para ser consistente, criei algumas regras:
+
+- **Rotular pelo que a loja é, não pelo que eu lembro de ter comprado.** O modelo só vê o texto, então minha memória não pode entrar no rótulo.
+- **Alimentação** = comida e bebida prontas. **Mercado** = compras de casa (supermercado, hortifruti, açougue).
+- **Pix, TED, aplicação e resgate** → Transferência, porque o texto não diz o motivo.
+- **Pagamento de fatura, IOF e cashback** → Outros. Pagamento de fatura não é gasto novo: contar de novo seria duplicar.
+- **Cobrança no nome do shopping, posto e Tag** → Transporte. **IPTU e condomínio** → Moradia.
+
 | Categoria | Exemplos | % |
 |---|---|---|
 | Alimentação | 163 | 24,4 |
@@ -87,72 +102,74 @@ Cada banco escreve a mesma loja de um jeito diferente. O Inter corta o nome do e
 | Moradia | 8 | 1,2 |
 | Educação | 5 | 0,7 |
 
-O dataset é **desbalanceado**: as três maiores categorias somam quase 60% das linhas, enquanto Assinaturas, Moradia e Educação têm menos de 15 exemplos cada. Isso define a métrica principal do projeto (F1 macro, abaixo).
-
-### Privacidade
-O script `src/anonimizar.py` lê o extrato exportado e:
-- mantém **só a descrição** (valor e data são descartados);
-- troca nomes de pessoas em Pix e transferências por `PESSOA`;
-- remove CPF, CNPJ, e-mails, telefones, agência, conta e sequências longas de números;
-- marca as linhas suspeitas para **revisão manual**, que foi feita em todas.
-
-Nas faturas, compras feitas diretamente com pessoas físicas também tiveram o nome trocado por `PESSOA`. Os extratos originais ficam em `data/raw/`, que está no `.gitignore` e nunca vai para o repositório.
-
-```bash
-python src/anonimizar.py data/raw/extrato.csv --coluna Descrição --fonte conta --saida data/processed/para_rotular.csv
-python src/exportar_rotulado.py   # valida a planilha e gera data/processed/rotulado_v1.csv
-```
-
-### Convenções de rotulagem
-Rotular uma transação é mais ambíguo do que parece. As regras abaixo garantem que textos iguais sempre recebam o mesmo rótulo:
-
-- **Rotular pelo que o estabelecimento é, não pela compra específica.** O modelo só vê o texto, então a memória de quem rotulou não pode entrar no rótulo.
-- **Alimentação** = comida e bebida prontas (restaurante, padaria, bar, adega). **Mercado** = ingredientes e compras de casa (supermercado, atacado, hortifruti, açougue, conveniência).
-- **Pix, TED, aplicação e resgate** → Transferência. O texto não diz o motivo, só que o dinheiro mudou de conta.
-- **Pagamento de fatura, IOF, cashback e doações** → Outros. Pagamento de fatura não é gasto novo: contá-lo seria duplicar.
-- **Cobrança no nome do próprio shopping, posto, pedágio e Tag** → Transporte.
-- **Prefeitura (IPTU) e condomínio** → Moradia.
-- **Academia e farmácia** → Saúde. **Viagem, hotel e ingressos** → Lazer. **Software e streaming** → Assinaturas.
-- **Educação** só para escola, faculdade e cursos (livraria vai em Compras).
+Dá para ver que o dataset é **desbalanceado**: tem muito mais Alimentação do que Educação. Isso fez muita diferença na hora de avaliar o modelo.
 
 ---
 
-## Baseline: TF-IDF + Regressão Logística
+## 2. O primeiro modelo
 
-O primeiro modelo é propositalmente simples: transforma cada descrição em números com **TF-IDF** e classifica com **Regressão Logística**. Ele serve de referência para tudo que vier depois.
+Para começar, usei uma combinação clássica e simples:
+1. **TF-IDF** transforma cada descrição em números, dando mais peso às palavras raras e informativas (`Drogasil`, `Posto`) e menos às que aparecem em tudo (`Compra`, `débito`).
+2. **Regressão Logística** aprende quais palavras indicam cada categoria.
 
-### Métrica
-A métrica principal é o **F1 macro**: a média do F1 de cada categoria, todas com o mesmo peso. A acurácia sozinha engana neste dataset, porque um modelo que acerta bem as categorias grandes já tem nota alta mesmo zerando as pequenas.
+A ideia não é ter o melhor modelo ainda, e sim uma **referência** para comparar tudo o que vier depois.
 
-Todos os números abaixo vêm de **validação cruzada estratificada com 5 partes** (média ± desvio padrão), que é mais confiável que um único sorteio de treino/teste num dataset deste tamanho.
+### Como medi
+Meu primeiro resultado foi 63% de acurácia, e eu achei ótimo. Depois descobri dois problemas:
+
+- **A acurácia enganava.** O modelo ia bem nas categorias grandes e zerava nas pequenas, e a nota nem percebia. Passei a usar o **F1 macro**, que dá o mesmo peso para todas as categorias.
+- **Um número só oscilava.** Adicionar uma única linha ao dataset mudou a nota de 61,2% para 60,4%. Passei a usar **validação cruzada**: o modelo é testado 5 vezes, em partes diferentes dos dados, e eu reporto a média ± a variação.
 
 ### Resultados
 
-| Representação do texto | Regressão Logística | F1 macro | Acurácia |
+| Como o texto vira números | Ajuste no modelo | F1 macro | Acurácia |
 |---|---|---|---|
-| palavras | padrão | 0.421 ± 0.032 | 0.594 ± 0.043 |
-| n-gramas de caracteres (2–4) | padrão | 0.471 ± 0.031 | 0.640 ± 0.033 |
-| palavras | `class_weight="balanced"` | 0.565 ± 0.064 | 0.610 ± 0.033 |
-| **n-gramas de caracteres (2–4)** | **`class_weight="balanced"`** | **0.614 ± 0.068** | **0.663 ± 0.033** |
+| palavras inteiras | nenhum | 0.421 ± 0.032 | 0.594 ± 0.043 |
+| pedaços de 2 a 4 letras | nenhum | 0.471 ± 0.031 | 0.640 ± 0.033 |
+| palavras inteiras | categorias balanceadas | 0.565 ± 0.064 | 0.610 ± 0.033 |
+| **pedaços de 2 a 4 letras** | **categorias balanceadas** | **0.614 ± 0.068** | **0.663 ± 0.033** |
 
-Referência: chutar sempre a categoria mais comum (Alimentação) dá acurácia de 0.246.
+Para comparar: chutar sempre "Alimentação" acertaria 24,6% das vezes.
 
-- **N-gramas de caracteres** ajudam porque os bancos cortam e colam palavras (`Drogasil2705`, `Restaursao`). Pedaços de 2 a 4 letras ainda batem com a forma completa, enquanto a palavra inteira não bate.
-- **`class_weight="balanced"`** faz o erro numa categoria pequena pesar tanto quanto o erro numa grande. Foi o maior ganho isolado (+14 pontos de F1 macro), sem perder acurácia.
-- Os dois ganhos **praticamente se somam** (0.421 → 0.614), porque atacam problemas diferentes: texto truncado e desbalanceamento.
+O que aprendi com cada teste:
+- **Pedaços de letras** ajudam porque os bancos cortam os nomes. `Drogasil2705` não bate com `Drogasil` como palavra inteira, mas os pedaços `dro`, `rog`, `gas`... batem.
+- **Balancear as categorias** (`class_weight="balanced"`) faz o erro numa categoria pequena pesar tanto quanto numa grande. Foi o maior ganho.
+- **Os dois ganhos se somaram quase exatamente**, porque resolvem problemas diferentes. Eu tinha apostado nisso antes de rodar, e deu certo.
 
-### Análise de erros (modelo por palavras, sem balanceamento)
-- **Alimentação vira a "categoria lixeira".** Ela tem recall de 0.94, mas precisão de 0.44: das 70 previsões de Alimentação no teste, só 31 estavam certas. Compras, Outros, Mercado e Transporte são os mais confundidos com ela, porque compartilham o mesmo formato (`Compra no débito - <loja> <cidade> Bra`).
-- **Mercado, Transporte e Saúde** têm precisão de 1.00 e recall baixo: quando o modelo escolhe essas categorias ele acerta, mas quase nunca as escolhe. É exatamente o que o balanceamento corrige.
-- **Transferência acerta 100%**, porque o padrão `Pix - PESSOA - <banco>` é sempre igual.
-- **Fatura de cartão é mais difícil que extrato de conta** (52% contra 73% de acerto): o cartão tem muito mais variedade de lojas e nomes cortados, enquanto a conta é dominada por Pix.
-- Alguns casos são impossíveis de deduzir só pelo texto, mesmo para uma pessoa (ex.: `CHAPEUZINHO VERMELHO` é uma padaria; `A B & B Comercio De Pr...` é uma razão social genérica).
+### Onde o modelo erra
+- **Alimentação virou a "lixeira".** Quando o modelo não sabe, ele chuta Alimentação: das 70 vezes que ele disse Alimentação no teste, só 31 estavam certas. A matriz de confusão mostrou que Mercado, Compras e Transporte iam muito para lá, porque todos têm a mesma cara (`Compra no débito - <loja> <cidade> Bra`).
+- **Fatura de cartão é mais difícil que extrato de conta** (52% contra 73% de acerto). A conta tem muito Pix, que é sempre igual. O cartão tem lojas de todo tipo e nomes cortados.
+- **Alguns casos nem uma pessoa acertaria.** `CHAPEUZINHO VERMELHO` é uma padaria de bairro, mas nada no texto diz isso.
 
-### Próximos passos
-1. **Limpeza do texto**: remover prefixos fixos ("Compra no débito - ", "Bra") e separar números colados aos nomes, aplicada no treino e na previsão.
-2. **Regras + modelo**: dicionário para lojas conhecidas (ex.: Drogasil → Saúde), com o modelo cobrindo o resto.
-3. **Dados sintéticos** para Assinaturas, Moradia e Educação, usados só no treino (o teste continua 100% real).
-4. **Fine-tuning do BERTimbau**, comparado com este baseline.
+---
+
+## 3. Limpando o texto
+
+A matriz de confusão mostrou que muita coisa virava Alimentação porque quase toda compra do Inter tem a mesma "moldura": `Compra no débito - <loja> <cidade> Bra`. Escrevi uma função `limpar()` (em `src/limpeza.py`) que tira esse ruído antes do TF-IDF, usando **regex** (expressões regulares, uma minilinguagem para achar padrões em texto):
+
+```
+"Compra no débito - Drogasil2705 Sao Bernardo Bra"  →  "drogasil sao bernardo"
+"ALLIANZ SEGU*04 de 10"                             →  "allianz segu"
+```
+
+A função fica **dentro** do pipeline do modelo, então é aplicada igual no treino, no teste e em qualquer previsão futura.
+
+| Modelo | Sem limpeza | Com limpeza |
+|---|---|---|
+| palavras inteiras | 0.565 ± 0.064 | **0.612** ± 0.066 |
+| pedaços de 2 a 4 letras | 0.614 ± 0.068 | **0.624** ± 0.055 |
+
+O que aprendi:
+- **A limpeza ajudou muito o modelo de palavras e quase nada o de letras.** Os pedaços de letras já "enxergavam" `drogasil` dentro de `Drogasil2705`, então já resolviam parte do problema sozinhos. O ganho do modelo de letras ficou dentro da margem, mas a nota ficou mais estável (a variação caiu).
+- **Testei uma regra por vez** (desligando cada uma e medindo de novo, o que se chama *ablation*). As que mais ajudaram foram justamente as que tiram `Compra no débito` e `No Estabelecimento`. Nenhuma regra sozinha faz milagre: as quedas individuais somadas (0.046) dão quase exatamente o ganho total (0.047).
+- **Metade das regras não mudou nada.** O próprio TF-IDF já ignora pontuação e espaços, e uma regra que apaga números deixava outra sem função. Só descobri isso medindo: lendo o código, todas pareciam úteis.
+
+---
+
+## Próximos passos
+1. **Regras + modelo**: uma lista de lojas conhecidas (ex.: Drogasil → Saúde), e o modelo cuida do resto.
+2. **Exemplos sintéticos** para Assinaturas, Moradia e Educação, usados só no treino. O teste continua 100% real.
+3. **BERTimbau**, um modelo de linguagem treinado em português, para ver o quanto ele supera esta referência.
 
 ---
 
@@ -165,8 +182,6 @@ pip install -r requirements.txt
 ```
 
 Depois, abra os notebooks em `notebooks/` e selecione o kernel `.venv`.
-
----
 
 ## Tecnologias
 Python 3.11 · pandas · scikit-learn · matplotlib · Jupyter · *(em breve)* Hugging Face Transformers
