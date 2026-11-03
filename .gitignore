@@ -4,3 +4,5 @@ data/raw/*
 .venv/
 
 data/processed/para_rotular*.csv
+
+__pycache__/
