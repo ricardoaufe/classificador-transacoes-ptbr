@@ -19,12 +19,12 @@ Comecei este projeto para aprender machine learning na prática, do zero: nunca 
 | Etapa | Situação |
 |---|---|
 | Estrutura do repositório e ambiente | ✅ |
-| Dataset (coleta, anonimização e rotulagem) | ✅ 667 transações, 4 bancos |
+| Dataset (coleta, anonimização e rotulagem) | ✅ 667 transações reais, 4 bancos |
 | Exploração dos dados com pandas | ✅ `notebooks/01_exploracao.ipynb` |
-| Primeiro modelo (TF-IDF + Regressão Logística) | ✅ F1 macro **0.614** · `notebooks/02_baseline.ipynb` |
-| Limpeza do texto | ✅ F1 macro **0.624** · `notebooks/03_limpeza.ipynb` |
+| Primeiro modelo (TF-IDF + Regressão Logística) | ✅ F1 macro **0.638** · `notebooks/02_baseline.ipynb` |
+| Limpeza do texto | ✅ F1 macro **0.644** · `notebooks/03_limpeza.ipynb` |
+| Dados extras (web e sintéticos) | ✅ testado: **não ajudou** · `notebooks/04_dados_extras.ipynb` |
 | Regras + modelo (sistema híbrido) | ⏳ |
-| Dados sintéticos para as categorias pequenas | ⏳ |
 | Modelo de linguagem (BERTimbau) | ⏳ |
 | Publicação no Hugging Face + demo | ⏳ |
 
@@ -40,7 +40,8 @@ classificador-transacoes-ptbr/
 ├── notebooks/
 │   ├── 01_exploracao.ipynb   # primeiro contato com os dados
 │   ├── 02_baseline.ipynb     # primeiro modelo e avaliação
-│   └── 03_limpeza.ipynb      # limpeza do texto e ablation
+│   ├── 03_limpeza.ipynb      # limpeza do texto e ablation
+│   └── 04_dados_extras.ipynb # dados da web e sintéticos: ajudam ou atrapalham?
 ├── src/
 │   ├── anonimizar.py         # tira nomes e documentos dos extratos
 │   ├── exportar_rotulado.py  # converte a planilha rotulada no CSV final
@@ -92,15 +93,15 @@ Rotulei tudo à mão numa planilha, em 11 categorias. Foi mais difícil do que e
 |---|---|---|
 | Alimentação | 163 | 24,4 |
 | Outros | 122 | 18,3 |
-| Compras | 104 | 15,6 |
+| Compras | 107 | 16,0 |
 | Lazer | 59 | 8,8 |
 | Transferência | 55 | 8,2 |
 | Mercado | 53 | 7,9 |
 | Transporte | 53 | 7,9 |
 | Saúde | 32 | 4,8 |
 | Assinaturas | 13 | 1,9 |
-| Moradia | 8 | 1,2 |
 | Educação | 5 | 0,7 |
+| Moradia | 5 | 0,7 |
 
 Dá para ver que o dataset é **desbalanceado**: tem muito mais Alimentação do que Educação. Isso fez muita diferença na hora de avaliar o modelo.
 
@@ -124,10 +125,12 @@ Meu primeiro resultado foi 63% de acurácia, e eu achei ótimo. Depois descobri 
 
 | Como o texto vira números | Ajuste no modelo | F1 macro | Acurácia |
 |---|---|---|---|
-| palavras inteiras | nenhum | 0.421 ± 0.032 | 0.594 ± 0.043 |
-| pedaços de 2 a 4 letras | nenhum | 0.471 ± 0.031 | 0.640 ± 0.033 |
-| palavras inteiras | categorias balanceadas | 0.565 ± 0.064 | 0.610 ± 0.033 |
-| **pedaços de 2 a 4 letras** | **categorias balanceadas** | **0.614 ± 0.068** | **0.663 ± 0.033** |
+| palavras inteiras | nenhum | 0.421 ± 0.022 | 0.601 ± 0.037 |
+| pedaços de 2 a 4 letras | nenhum | 0.472 ± 0.024 | 0.645 ± 0.025 |
+| palavras inteiras | categorias balanceadas | 0.581 ± 0.040 | 0.618 ± 0.026 |
+| **pedaços de 2 a 4 letras** | **categorias balanceadas** | **0.638 ± 0.095** | **0.664 ± 0.049** |
+
+Todos os números desta seção e da próxima usam só os 667 exemplos reais, com validação cruzada de 5 partes. Eles mudaram um pouco desde a primeira versão deste README porque revisei alguns rótulos.
 
 Para comparar: chutar sempre "Alimentação" acertaria 24,6% das vezes.
 
@@ -156,20 +159,50 @@ A função fica **dentro** do pipeline do modelo, então é aplicada igual no tr
 
 | Modelo | Sem limpeza | Com limpeza |
 |---|---|---|
-| palavras inteiras | 0.565 ± 0.064 | **0.612** ± 0.066 |
-| pedaços de 2 a 4 letras | 0.614 ± 0.068 | **0.624** ± 0.055 |
+| palavras inteiras | 0.581 ± 0.040 | **0.614** ± 0.046 |
+| pedaços de 2 a 4 letras | 0.638 ± 0.095 | **0.644** ± 0.084 |
 
 O que aprendi:
 - **A limpeza ajudou muito o modelo de palavras e quase nada o de letras.** Os pedaços de letras já "enxergavam" `drogasil` dentro de `Drogasil2705`, então já resolviam parte do problema sozinhos. O ganho do modelo de letras ficou dentro da margem, mas a nota ficou mais estável (a variação caiu).
-- **Testei uma regra por vez** (desligando cada uma e medindo de novo, o que se chama *ablation*). As que mais ajudaram foram justamente as que tiram `Compra no débito` e `No Estabelecimento`. Nenhuma regra sozinha faz milagre: as quedas individuais somadas (0.046) dão quase exatamente o ganho total (0.047).
+- **Testei uma regra por vez** (*ablation*). As que mais ajudaram foram justamente as que tiram `No Estabelecimento` (−0.014 sem ela) e `Compra no débito` (−0.006). Nenhuma regra sozinha faz milagre: o ganho vem de várias regras pequenas somadas.
 - **Metade das regras não mudou nada.** O próprio TF-IDF já ignora pontuação e espaços, e uma regra que apaga números deixava outra sem função. Só descobri isso medindo: lendo o código, todas pareciam úteis.
+
+---
+
+## 4. Dados extras: por que os sintéticos não ajudaram
+
+Três categorias têm pouquíssimos exemplos reais: Assinaturas (13), Educação (5) e Moradia (5). A ideia parecia óbvia: dar mais exemplos dessas categorias para o modelo. Juntei dois tipos de dado extra:
+
+- **web** (11 linhas): descrições reais que pessoas publicaram na internet, em sites de reclamação e fóruns;
+- **sintéticos** (66 linhas): descrições que eu escrevi, com ajuda de um chatbot, imitando o jeito de cada banco (`DM *SPOTIFYBR`, `Pagamento de boleto efetuado - SABESP`).
+
+### Como medi sem me enganar
+Os extras entram **só no treino**. O teste continua 100% com os meus dados reais, sempre nas mesmas partes (os mesmos *folds*). Se os sintéticos entrassem no teste, a nota mediria se o modelo acerta exemplos que eu inventei, e não os meus extratos de verdade. Para isso, escrevi o loop da validação cruzada à mão em vez de usar a função pronta do scikit-learn.
+
+Nesta etapa passei a usar 10 partes em vez de 5 e revisei alguns rótulos, por isso a referência "só real" mudou em relação à seção 3.
+
+### Resultados (pedaços de letras + limpeza, 10 folds)
+
+| Treino | Extras | F1 macro |
+|---|---|---|
+| **só dados reais** | 0 | **0.664 ± 0.088** |
+| reais + web | 11 | 0.646 ± 0.065 |
+| reais + todos os sintéticos | 66 | 0.646 ± 0.080 |
+| reais + sintéticos filtrados | 39 | 0.658 ± 0.091 |
+
+### O que aprendi
+- **Mais dados não é o mesmo que dados melhores.** Os sintéticos deixaram o modelo um pouco **pior**.
+- **A análise de erros mostrou o porquê.** Na primeira versão, `UBER *ONE` (assinatura) fez corridas reais de Uber virarem Assinaturas. E como meus sintéticos do Itaú eram quase todos assinaturas em letras maiúsculas, o modelo aprendeu que "nome curto em maiúsculas = Assinaturas", e uma padaria (`CHARLOT`) virou assinatura. Isso tem nome: *shortcut learning*, quando o modelo aprende uma pista que funciona no treino mas não vale no mundo real.
+- **Filtrei no código, não no arquivo.** Escrevi regras que marcam os sintéticos ambíguos (intermediários de pagamento como `EBANX*` e `MP*`, que aparecem em várias categorias, e o formato curto do Itaú), sem apagar nada do dataset. Assim dá para desfazer e comparar.
+- **O filtro recuperou quase toda a perda, mas não trouxe ganho.** Filtrar ainda mais (tirando também combinações de banco e categoria que não existem nos dados reais) voltou a piorar. E todas as diferenças ficaram dentro da margem (±), então o resultado honesto é um empate.
+- **Decisão:** o modelo oficial continua treinado **só com dados reais**. A curva de aprendizado (a nota conforme o treino cresce) ainda está subindo, então o melhor investimento é coletar mais dado real.
 
 ---
 
 ## Próximos passos
 1. **Regras + modelo**: uma lista de lojas conhecidas (ex.: Drogasil → Saúde), e o modelo cuida do resto.
-2. **Exemplos sintéticos** para Assinaturas, Moradia e Educação, usados só no treino. O teste continua 100% real.
-3. **BERTimbau**, um modelo de linguagem treinado em português, para ver o quanto ele supera esta referência.
+2. **BERTimbau**, um modelo de linguagem treinado em português, para ver o quanto ele supera esta referência.
+3. **Publicar no Hugging Face** o dataset e o modelo, com uma demo.
 
 ---
 
