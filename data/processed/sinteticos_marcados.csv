@@ -1,0 +1,67 @@
+descricao,categoria,fonte,banco,regra1_marca,regra2_itau,regra3_par
+NETFLIX ENTRETENIMENTO,Assinaturas,sintetico,Itaú,False,True,False
+DISNEY PLUS,Assinaturas,sintetico,Itaú,False,True,False
+HBOMAX,Assinaturas,sintetico,Itaú,False,True,False
+GLOBOPLAY,Assinaturas,sintetico,Itaú,False,True,False
+DEEZER BRASIL,Assinaturas,sintetico,Itaú,False,True,False
+APPLE.COM/BILL,Assinaturas,sintetico,Itaú,False,True,False
+PARAMOUNT PLUS,Assinaturas,sintetico,Bradesco,False,False,False
+CRUNCHYROLL,Assinaturas,sintetico,Bradesco,False,False,False
+KINDLE UNLTD,Assinaturas,sintetico,Itaú,False,True,False
+DROPBOX*2YH7K,Assinaturas,sintetico,Itaú,False,True,False
+ADOBE *CREATIVE CLD,Assinaturas,sintetico,Itaú,False,True,False
+MICROSOFT*365 FAMILY,Assinaturas,sintetico,Itaú,False,True,False
+NOTION LABS,Assinaturas,sintetico,Inter,False,False,False
+DUOLINGO*,Assinaturas,sintetico,Itaú,False,True,False
+EBANX*DUOLINGO,Assinaturas,sintetico,Itaú,True,True,False
+TINDER,Assinaturas,sintetico,Bradesco,False,False,False
+RAPPI PRIME,Assinaturas,sintetico,Itaú,False,True,False
+TELECINE,Assinaturas,sintetico,Bradesco,False,False,False
+GOOGLE *Google One,Assinaturas,sintetico,Itaú,False,False,False
+ESTADAO DIGITAL,Assinaturas,sintetico,Itaú,False,True,False
+FOLHA DIGITAL,Assinaturas,sintetico,Bradesco,False,False,False
+EBN*NETFLIX0110,Assinaturas,sintetico,Inter,False,False,False
+Google Play YouTube,Assinaturas,sintetico,Inter,False,False,False
+Compra no débito - Netflix.com Sao Paulo Bra,Assinaturas,sintetico,Inter,False,False,False
+Compra no débito - Disney Plus Sao Paulo Bra,Assinaturas,sintetico,Inter,False,False,False
+DM *SPOTIFYBR,Assinaturas,sintetico,Itaú,False,True,False
+DESCOMPLICA 03/12,Educação,sintetico,Itaú,False,True,False
+ESTRATEGIA CONCURSOS01/10,Educação,sintetico,Itaú,False,True,False
+UDEMY,Educação,sintetico,Itaú,False,True,False
+EBANX*UDEMY,Educação,sintetico,Inter,True,False,False
+COURSERA,Educação,sintetico,Itaú,False,True,False
+KUMON UNID VILA MARIA,Educação,sintetico,Itaú,False,True,False
+CNA IDIOMAS 02/06,Educação,sintetico,Itaú,False,True,False
+WIZARD BY PEARSON,Educação,sintetico,Bradesco,False,False,True
+FISK ESCOLA IDIOMAS,Educação,sintetico,Bradesco,False,False,True
+ROCKETSEAT,Educação,sintetico,Inter,False,False,False
+HOTMART*CURSO PRO03/12,Educação,sintetico,Itaú,False,True,False
+EDUZZ*TREINAMENTO 01/06,Educação,sintetico,Itaú,False,True,False
+PAG*AULASDEINGLES,Educação,sintetico,Itaú,True,True,False
+MP*ESCOLADEMUSICA,Educação,sintetico,Itaú,True,True,False
+KIWIFY *CURSO,Educação,sintetico,Itaú,False,True,False
+Pagamento de boleto efetuado - UNIVERSIDADE PAULISTA UNI,Educação,sintetico,Nubank,False,False,True
+Pagamento de boleto efetuado - ANHANGUERA EDUCACIONAL P,Educação,sintetico,Nubank,False,False,True
+Pagamento de boleto efetuado - COLEGIO OBJETIVO,Educação,sintetico,Nubank,False,False,True
+Pagamento de boleto efetuado - SENAC SAO PAULO,Educação,sintetico,Nubank,False,False,True
+Pagamento efetuado - UNINOVE,Educação,sintetico,Inter,False,False,False
+Pagamento efetuado - ESCOLA ADVENTISTA,Educação,sintetico,Inter,False,False,False
+Compra no débito - Kumon Santo Andre Bra,Educação,sintetico,Inter,False,False,False
+Pagamento de boleto efetuado - ENEL DISTRIBUICAO SAO PAU,Moradia,sintetico,Nubank,False,False,False
+Pagamento de boleto efetuado - CIA SANEAMENTO BASICO ES,Moradia,sintetico,Nubank,False,False,False
+Pagamento de boleto efetuado - LELLO CONDOMINIOS,Moradia,sintetico,Nubank,False,False,False
+Pagamento de boleto efetuado - QUINTOANDAR ADMINISTRACA,Moradia,sintetico,Nubank,False,False,False
+Pagamento de boleto efetuado - PREFEITURA MUNICIPAL DE CAMPINA,Moradia,sintetico,Nubank,False,False,False
+Pagamento de boleto efetuado - COMGAS,Moradia,sintetico,Nubank,False,False,False
+Pagamento de boleto efetuado - AUXILIADORA PREDIAL,Moradia,sintetico,Nubank,False,False,False
+Pagamento efetuado - CPFL PAULISTA,Moradia,sintetico,Inter,False,False,True
+Pagamento efetuado - SABESP,Moradia,sintetico,Inter,False,False,True
+Pagamento efetuado - LIGHT SERVICOS DE ELETRICIDADE,Moradia,sintetico,Inter,False,False,True
+Pagamento efetuado - CEMIG DISTRIBUICAO,Moradia,sintetico,Inter,False,False,True
+Pagamento efetuado - COPASA MG,Moradia,sintetico,Inter,False,False,True
+Pagamento efetuado - SANEPAR,Moradia,sintetico,Inter,False,False,True
+Pagamento efetuado - COPEL DISTRIBUICAO,Moradia,sintetico,Inter,False,False,True
+Pagamento efetuado - PM SANTO ANDRE IPTU,Moradia,sintetico,Inter,False,False,True
+Pagamento efetuado - PREFEITURA DO RIO DE JANEIRO,Moradia,sintetico,Inter,False,False,True
+Pagamento efetuado - HUBERT IMOVEIS ADM,Moradia,sintetico,Inter,False,False,True
+Pagamento efetuado - CONDOMINIO EDIFICIO SOLAR,Moradia,sintetico,Inter,False,False,True

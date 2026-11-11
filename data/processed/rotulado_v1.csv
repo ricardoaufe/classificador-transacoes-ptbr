@@ -31,7 +31,7 @@ Compra no débito - Casa De Carnes E Rotissao Bernardo Bra,Mercado,conta,Inter
 Compra no débito - A B & B Comercio De Prsao Bernardo Bra,Outros,conta,Inter
 Compra no débito - Chiquinho Sorvetes Outsao Bernardo Bra,Alimentação,conta,Inter
 Compra no débito - Livraria Da Vila Ltda Sao Paulo Bra,Compras,conta,Inter
-Pagamento efetuado - FEI (TAXAS),Educação,conta,Inter
+Compra no débito - IFD*IFOOD CLUB,Assinaturas,conta,Nubank
 Compra no débito - Sushi Corner Japanese Sao Bernardo Bra,Alimentação,conta,Inter
 Compra Meio De Transporte - No Estabelecimento Emv Cptm* Sao Paulo Bra,Transporte,conta,Inter
 Transferência enviada pelo Pix - PESSOA - BANCO INTER (0077),Transferência,conta,Nubank
@@ -43,28 +43,28 @@ Transferência enviada pelo Pix - PESSOA - BCO SANTANDER (BRASIL) S.A. (0033),Tr
 Transferência enviada pelo Pix - PESSOA - WOOVI IP LTDA. (0694),Transferência,conta,Nubank
 Transferência enviada pelo Pix - PESSOA - BCO C6 S.A. (0336),Transferência,conta,Nubank
 Transferência recebida pelo Pix - PESSOA - BCO SANTANDER (BRASIL) S.A. (0033),Transferência,conta,Nubank
-Pagamento de boleto efetuado - CONDOMINIO DO CONJUNTO RESIDEN,Moradia,conta,Nubank
+NETFLIX.COM,Assinaturas,cartao,Bradesco
 Pagamento de boleto efetuado - HOSPITAL GRAACC-INSTITUTO DE ONCOLOGIA P,Outros,conta,Nubank
 Pagamento de boleto efetuado - ASSOC ASSIST CRIANC DEFICIENTE,Outros,conta,Nubank
 Transferência recebida pelo Pix - PESSOA - BCO BRADESCO S.A. (0237),Transferência,conta,Nubank
 Transferência enviada pelo Pix - PESSOA - BCO DO BRASIL S.A. (0001),Transferência,conta,Nubank
 Pagamento de fatura,Outros,conta,Nubank
 Transferência enviada pelo Pix - PESSOA - MAGALUPAY,Transferência,conta,Nubank
-Compra no débito - IFD*IFOOD CLUB,Assinaturas,conta,Nubank
+Google G1AI101M,Assinaturas,cartao,Inter
 Compra no débito - POSTO MONTE CARLO IGUA,Transporte,conta,Nubank
 Transferência enviada pelo Pix - PESSOA - BCO BRADESCO S.A. (0237),Transferência,conta,Nubank
 Transferência enviada pelo Pix - PESSOA - COOP SICREDI AGROEMPRESARIAL,Transferência,conta,Nubank
 Transferência Recebida - PESSOA - NU PAGAMENTOS - IP (0260),Transferência,conta,Nubank
 Transferência recebida pelo Pix - PESSOA - BCO DO BRASIL S.A. (0001),Transferência,conta,Nubank
-Pagamento de boleto efetuado - PREF MUN SAO BERNARD,Moradia,conta,Nubank
+Google CLOUD RSwTPP,Assinaturas,cartao,Inter
 Transferência enviada pelo Pix - PESSOA - BANCO INTER,Transferência,conta,Nubank
 Compra no débito - IFD*CHURRASCO DO GU SE,Alimentação,conta,Nubank
 Transferência recebida pelo Pix - PESSOA - STONE IP S.A. (0197),Transferência,conta,Nubank
 Transferência enviada pelo Pix - PESSOA - STONE IP S.A. (0197),Transferência,conta,Nubank
 Transferência recebida pelo Pix - PESSOA - BANCO INTER (0077),Transferência,conta,Nubank
-Pagamento de boleto efetuado - BBZ ADMINISTRACAO DE CONDOMINI,Moradia,conta,Nubank
+ANTHROPIC* CLAUDE SUB,Assinaturas,cartao,Inter
 Compra no débito - PAYGO*PHD PARK,Transporte,conta,Nubank
-Pagamento de boleto efetuado - PM SAO BERNARDO DO CAMPO,Moradia,conta,Nubank
+EBN*CANVA0503,Assinaturas,cartao,Inter
 Compra no débito - IFD*MADERO INDUSTRIA E,Alimentação,conta,Nubank
 Transferência enviada pelo Pix - PESSOA - STONE IP S.A.,Transferência,conta,Nubank
 Transferência enviada pelo Pix - PESSOA - STARK BANK S.A. - IP (0665),Transferência,conta,Nubank
@@ -82,7 +82,7 @@ Compra no débito - SOCIEDADE RELIGIOSA R,Outros,conta,Nubank
 Transferência enviada pelo Pix - PESSOA - CASAS BAHIA PAY IP LTDA. (0675),Transferência,conta,Nubank
 Compra no débito - EMV CMT*,Transporte,conta,Nubank
 Transferência enviada pelo Pix - PESSOA - ADYEN DO BRASIL IP LTDA.,Transferência,conta,Nubank
-Pagamento de boleto efetuado - DIADEMA PREFEITURA,Moradia,conta,Nubank
+EDZUPMESEXPER,Assinaturas,cartao,Itaú
 Resgate RDB,Transferência,conta,Nubank
 PAGTO. POR DEB EM C/C,Outros,cartao,Bradesco
 SRM EMPORIO DAS EMBALA,Compras,cartao,Bradesco
@@ -98,7 +98,7 @@ SHIHADEH ROUPAS E CALC,Compras,cartao,Bradesco
 0 BLUEFIT MARECHAL,Saúde,cartao,Bradesco
 PESSOA,Outros,cartao,Bradesco
 SUPERMERCADO SERVE BEM,Mercado,cartao,Bradesco
-RUYCE ACABAMENTOS E 01/05,Moradia,cartao,Bradesco
+OPENAI *CHATGPT SUBSCR,Assinaturas,cartao,Itaú
 DROGASIL1138  01/02,Saúde,cartao,Bradesco
 CASTELINHO DA PAMONHA,Alimentação,cartao,Bradesco
 BEM BARATO,Mercado,cartao,Bradesco
@@ -108,7 +108,7 @@ AMENDOIM DO JONAS,Compras,cartao,Bradesco
 VIM ESPORTE E TECNOLOG,Compras,cartao,Bradesco
 OkinalarSao,Compras,cartao,Bradesco
 PESSOA EPP,Outros,cartao,Bradesco
-SuperMixMaterial,Moradia,cartao,Bradesco
+AVAST AVP1714 01/03,Assinaturas,cartao,Itaú
 PORTUCALE PREMIUM,Alimentação,cartao,Bradesco
 Supervisao,Outros,cartao,Bradesco
 StereoCar 01/08,Transporte,cartao,Bradesco
@@ -123,7 +123,7 @@ CAPPTA *PESSOA,Outros,cartao,Bradesco
 IPE CAMPOS,Lazer,cartao,Bradesco
 LibelulasRoupasE,Compras,cartao,Bradesco
 REDE TRIUNFO,Transporte,cartao,Bradesco
-NETFLIX.COM,Assinaturas,cartao,Bradesco
+AmazonPrimeBR,Assinaturas,cartao,Itaú
 MILENIO ERVAS NATURA,Mercado,cartao,Bradesco
 PAO DE ACUCAR-2462,Mercado,cartao,Bradesco
 MR COSMETICOS,Compras,cartao,Bradesco
@@ -338,15 +338,15 @@ Compra no débito - Pg *ton PESSOA Porto Seguro Bra,Outros,conta,Inter
 Compra no débito - Mp *barracadamama Porto Seguro Bra,Alimentação,conta,Inter
 Compra no débito - Pag*PESSOA Porto Seguro Bra,Outros,conta,Inter
 Compra no débito - Cabana Area Beach-bea Porto Seguro Bra,Alimentação,conta,Inter
-Google G1AI101M,Assinaturas,cartao,Inter
+Google YouTubePremium,Assinaturas,cartao,Itaú
 PAGAMENTO ON LINE,Outros,cartao,Inter
-Google CLOUD RSwTPP,Assinaturas,cartao,Inter
+EBN*SPOTIFY,Assinaturas,cartao,Itaú
 Bacio di Latte-LJ0016,Alimentação,cartao,Inter
 CINEMARK SHOP CIDADE S,Lazer,cartao,Inter
-ANTHROPIC* CLAUDE SUB,Assinaturas,cartao,Inter
+MICROSOFT STORE SAO PAULO BRA,Assinaturas,conta,Inter
 IOF INTERNACIONAL,Outros,cartao,Inter
 MOBY DICK,Lazer,cartao,Inter
-EBN*CANVA0503,Assinaturas,cartao,Inter
+compra cart ELO DM*SPOTIFY,Assinaturas,web,Bradesco
 MERCADOPAGO *EBAZA04/12,Compras,cartao,Itaú
 PES SEM DOR LTDA E02/10,Saúde,cartao,Itaú
 KABUM 02/10,Compras,cartao,Itaú
@@ -387,20 +387,20 @@ JM MAGAZINE,Compras,cartao,Itaú
 ZIG*ARENA 40 GRAUS,Alimentação,cartao,Itaú
 LAVORIA ADMINISTRACAO,Outros,cartao,Itaú
 ARENA,Lazer,cartao,Itaú
-LEROY MERLIN,Moradia,cartao,Itaú
+ON DM *SPOTIFY,Assinaturas,web,Itaú
 HARMONIA CAFETERIA,Alimentação,cartao,Itaú
-EDZUPMESEXPER,Assinaturas,cartao,Itaú
+GOOGLE *GOOGLE STORAGE GOOGLE.CO,Assinaturas,web,Desconhecido
 TAKAYA,Compras,cartao,Itaú
 NOVA HORTIFRUTI P R,Mercado,cartao,Itaú
 SONDA SBCAMPO,Mercado,cartao,Itaú
-ENERGY SERVICOS EDUCAT,Educação,cartao,Itaú
+Pagamento efetuado - FEI (TAXAS),Educação,conta,Inter
 HOTELDO 01/03,Lazer,cartao,Itaú
 EMPORIO FLORIO,Mercado,cartao,Itaú
 HFISCHER *HFISC01/06,Outros,cartao,Itaú
 MaxxPark,Transporte,cartao,Itaú
 LIVELO S.A. 11/12,Outros,cartao,Itaú
 DECATHLON ECOMMERC07/10,Compras,cartao,Itaú
-OPENAI *CHATGPT SUBSCR,Assinaturas,cartao,Itaú
+ENERGY SERVICOS EDUCAT,Educação,cartao,Itaú
 HFISCHER *HFISC03/06,Outros,cartao,Itaú
 MERCADOPAGO *EBAZA06/12,Compras,cartao,Itaú
 ORINTER TOUR E TRA03/03,Lazer,cartao,Itaú
@@ -567,7 +567,7 @@ ASSAI ATACAD-CT LJ10,Mercado,cartao,Itaú
 MERCADOLIVRE*LOJAE01/03,Compras,cartao,Itaú
 GARDENNIA ALIMENTACAO,Alimentação,cartao,Itaú
 RODOPOSTO RUBI,Transporte,cartao,Itaú
-AVAST AVP1714 01/03,Assinaturas,cartao,Itaú
+GREENN**PR7 TREINA05/12,Educação,cartao,Itaú
 TagItau *Recarga,Transporte,cartao,Itaú
 5M COMERCIO -CT ADISTA,Mercado,cartao,Itaú
 FORT 585 SP -CT,Mercado,cartao,Itaú
@@ -598,25 +598,25 @@ RESTAURANTE DA FAZENDA,Alimentação,cartao,Itaú
 SHOPPING GOLDEN SQUARE,Transporte,cartao,Itaú
 OBA HORTIFRUTI SAO BER,Mercado,cartao,Itaú
 ELLECE VAREJO DE ALIM,Mercado,cartao,Itaú
-AmazonPrimeBR,Assinaturas,cartao,Itaú
+PAIXAO PELA ROTINA02/02,Educação,cartao,Itaú
 PADARIA BRASILEIRA SBC,Alimentação,cartao,Itaú
 CHOCOART,Alimentação,cartao,Itaú
 PETZ PEREIRA BARRETO,Compras,cartao,Itaú
 Ingresso.com,Lazer,cartao,Itaú
 PECRN SAO BERNARDO RES,Alimentação,cartao,Itaú
 MINISO METROPOLE 0196,Compras,cartao,Itaú
-Google YouTubePremium,Assinaturas,cartao,Itaú
+GREENN**PR7 TREINA01/12,Educação,cartao,Itaú
 METROPOLE 118,Transporte,cartao,Itaú
 PAPELARIA SONIA,Compras,cartao,Itaú
-EBN*SPOTIFY,Assinaturas,cartao,Itaú
+DLOCAL HOTMART,Educação,web,Desconhecido
 OXXO WALLACE-CT,Mercado,cartao,Itaú
 PESSOA BEAUTY,Outros,cartao,Itaú
 PESSOA LTDA,Outros,cartao,Itaú
 DL*UberRides,Transporte,cartao,Itaú
 EXCLUSIVE BRAZIL 01/04,Lazer,cartao,Itaú
-GREENN**PR7 TREINA05/12,Educação,cartao,Itaú
+HOTMART,Educação,web,Desconhecido
 LEGENDARY CLUB PC,Lazer,cartao,Itaú
-PAIXAO PELA ROTINA02/02,Educação,cartao,Itaú
+D LOCALHOTMART,Educação,web,Desconhecido
 MERCADOPAGO *EBAZA12/12,Compras,cartao,Itaú
 PES SEM DOR LTDA E10/10,Saúde,cartao,Itaú
 CAFE CONCEITO 11,Alimentação,cartao,Itaú
@@ -659,10 +659,87 @@ GOLDEN PARRILLA EMPO,Alimentação,cartao,Itaú
 Prudent*APOL,Outros,cartao,Itaú
 CDB SAO BERNARDO,Saúde,cartao,Itaú
 GOL LINHAS A*OXWII01/03,Lazer,cartao,Itaú
-GREENN**PR7 TREINA01/12,Educação,cartao,Itaú
+ALURA *ALURA,Educação,web,Desconhecido
 MERCADOLIVRE*MERCADOL,Compras,cartao,Itaú
 HOTELDO 01/02,Lazer,cartao,Itaú
 JIM.COM* FIGUEIRAS ES,Outros,cartao,Itaú
 Sympla*7R PRODUCOES AR,Lazer,cartao,Itaú
 Inversiones Zahena,Outros,cartao,Itaú
-MICROSOFT STORE SAO PAULO BRA,Assinaturas,conta,Inter
+KIWIFY *PESSOA,Educação,web,Desconhecido
+Pagamento de boleto efetuado - CONDOMINIO DO CONJUNTO RESIDEN,Moradia,conta,Nubank
+Pagamento de boleto efetuado - PREF MUN SAO BERNARD,Moradia,conta,Nubank
+Pagamento de boleto efetuado - BBZ ADMINISTRACAO DE CONDOMINI,Moradia,conta,Nubank
+Pagamento de boleto efetuado - PM SAO BERNARDO DO CAMPO,Moradia,conta,Nubank
+Pagamento de boleto efetuado - DIADEMA PREFEITURA,Moradia,conta,Nubank
+RUYCE ACABAMENTOS E 01/05,Compras,cartao,Bradesco
+SuperMixMaterial,Compras,cartao,Bradesco
+LEROY MERLIN,Compras,cartao,Itaú
+SISDEB ENEL DISTR SP,Moradia,web,Desconhecido
+PAGTO CONVENIO SABESP,Moradia,web,Desconhecido
+PAGTO IPTU,Moradia,web,Desconhecido
+NETFLIX ENTRETENIMENTO,Assinaturas,sintetico,Itaú
+DISNEY PLUS,Assinaturas,sintetico,Itaú
+HBOMAX,Assinaturas,sintetico,Itaú
+GLOBOPLAY,Assinaturas,sintetico,Itaú
+DEEZER BRASIL,Assinaturas,sintetico,Itaú
+APPLE.COM/BILL,Assinaturas,sintetico,Itaú
+PARAMOUNT PLUS,Assinaturas,sintetico,Bradesco
+CRUNCHYROLL,Assinaturas,sintetico,Bradesco
+KINDLE UNLTD,Assinaturas,sintetico,Itaú
+DROPBOX*2YH7K,Assinaturas,sintetico,Itaú
+ADOBE *CREATIVE CLD,Assinaturas,sintetico,Itaú
+MICROSOFT*365 FAMILY,Assinaturas,sintetico,Itaú
+NOTION LABS,Assinaturas,sintetico,Inter
+DUOLINGO*,Assinaturas,sintetico,Itaú
+EBANX*DUOLINGO,Assinaturas,sintetico,Itaú
+TINDER,Assinaturas,sintetico,Bradesco
+RAPPI PRIME,Assinaturas,sintetico,Itaú
+TELECINE,Assinaturas,sintetico,Bradesco
+GOOGLE *Google One,Assinaturas,sintetico,Itaú
+ESTADAO DIGITAL,Assinaturas,sintetico,Itaú
+FOLHA DIGITAL,Assinaturas,sintetico,Bradesco
+EBN*NETFLIX0110,Assinaturas,sintetico,Inter
+Google Play YouTube,Assinaturas,sintetico,Inter
+Compra no débito - Netflix.com Sao Paulo Bra,Assinaturas,sintetico,Inter
+Compra no débito - Disney Plus Sao Paulo Bra,Assinaturas,sintetico,Inter
+DM *SPOTIFYBR,Assinaturas,sintetico,Itaú
+DESCOMPLICA 03/12,Educação,sintetico,Itaú
+ESTRATEGIA CONCURSOS01/10,Educação,sintetico,Itaú
+UDEMY,Educação,sintetico,Itaú
+EBANX*UDEMY,Educação,sintetico,Inter
+COURSERA,Educação,sintetico,Itaú
+KUMON UNID VILA MARIA,Educação,sintetico,Itaú
+CNA IDIOMAS 02/06,Educação,sintetico,Itaú
+WIZARD BY PEARSON,Educação,sintetico,Bradesco
+FISK ESCOLA IDIOMAS,Educação,sintetico,Bradesco
+ROCKETSEAT,Educação,sintetico,Inter
+HOTMART*CURSO PRO03/12,Educação,sintetico,Itaú
+EDUZZ*TREINAMENTO 01/06,Educação,sintetico,Itaú
+PAG*AULASDEINGLES,Educação,sintetico,Itaú
+MP*ESCOLADEMUSICA,Educação,sintetico,Itaú
+KIWIFY *CURSO,Educação,sintetico,Itaú
+Pagamento de boleto efetuado - UNIVERSIDADE PAULISTA UNI,Educação,sintetico,Nubank
+Pagamento de boleto efetuado - ANHANGUERA EDUCACIONAL P,Educação,sintetico,Nubank
+Pagamento de boleto efetuado - COLEGIO OBJETIVO,Educação,sintetico,Nubank
+Pagamento de boleto efetuado - SENAC SAO PAULO,Educação,sintetico,Nubank
+Pagamento efetuado - UNINOVE,Educação,sintetico,Inter
+Pagamento efetuado - ESCOLA ADVENTISTA,Educação,sintetico,Inter
+Compra no débito - Kumon Santo Andre Bra,Educação,sintetico,Inter
+Pagamento de boleto efetuado - ENEL DISTRIBUICAO SAO PAU,Moradia,sintetico,Nubank
+Pagamento de boleto efetuado - CIA SANEAMENTO BASICO ES,Moradia,sintetico,Nubank
+Pagamento de boleto efetuado - LELLO CONDOMINIOS,Moradia,sintetico,Nubank
+Pagamento de boleto efetuado - QUINTOANDAR ADMINISTRACA,Moradia,sintetico,Nubank
+Pagamento de boleto efetuado - PREFEITURA MUNICIPAL DE CAMPINA,Moradia,sintetico,Nubank
+Pagamento de boleto efetuado - COMGAS,Moradia,sintetico,Nubank
+Pagamento de boleto efetuado - AUXILIADORA PREDIAL,Moradia,sintetico,Nubank
+Pagamento efetuado - CPFL PAULISTA,Moradia,sintetico,Inter
+Pagamento efetuado - SABESP,Moradia,sintetico,Inter
+Pagamento efetuado - LIGHT SERVICOS DE ELETRICIDADE,Moradia,sintetico,Inter
+Pagamento efetuado - CEMIG DISTRIBUICAO,Moradia,sintetico,Inter
+Pagamento efetuado - COPASA MG,Moradia,sintetico,Inter
+Pagamento efetuado - SANEPAR,Moradia,sintetico,Inter
+Pagamento efetuado - COPEL DISTRIBUICAO,Moradia,sintetico,Inter
+Pagamento efetuado - PM SANTO ANDRE IPTU,Moradia,sintetico,Inter
+Pagamento efetuado - PREFEITURA DO RIO DE JANEIRO,Moradia,sintetico,Inter
+Pagamento efetuado - HUBERT IMOVEIS ADM,Moradia,sintetico,Inter
+Pagamento efetuado - CONDOMINIO EDIFICIO SOLAR,Moradia,sintetico,Inter
